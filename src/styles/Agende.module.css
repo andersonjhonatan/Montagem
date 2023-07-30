@@ -1,0 +1,84 @@
+.agende {
+  margin: 4rem 0 3rem 0;
+  background-color: var(--text-principal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+  width: 100vw;
+}
+.agende h2 {
+color: white;
+}
+
+.traco {
+  border: 2px solid white;
+  display: flex;
+  width: 100%;
+  margin:  0 0 0 94%;
+  border-radius: 10px 0 0 10px
+}
+
+.agende p {
+  margin: 0.5rem 0 0 0;
+  border-radius: 25px;
+  width: 50vw;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.agende button {
+  margin: 1rem 0 0 0;
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid white;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.agende button::after,
+.agende button::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: white;
+}
+.agende button::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.agende button:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.agende button:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+.agende button:hover {
+  color: var(--color);
+  font-weight: 400;
+}
+.agende button:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
