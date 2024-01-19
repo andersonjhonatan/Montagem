@@ -60,7 +60,6 @@ const Depoimentos = {
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
       nome: 'Mike',
-      foto: '/teste1.jpg',
       Montador: 'Anderson',
     },
     {
@@ -73,7 +72,6 @@ const Depoimentos = {
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
       nome: 'Pride',
-      foto: '/teste2.jpg',
       Montador: 'Anderson',
     },
     {
@@ -86,7 +84,6 @@ const Depoimentos = {
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
       nome: 'Matheus',
-      foto: '/teste3.jpg',
       Montador: 'Anderson',
     },
     {
@@ -99,7 +96,6 @@ const Depoimentos = {
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
       nome: 'Josefa',
-      foto: '/teste4.jpg',
       Montador: 'Anderson',
     },
     {
@@ -112,7 +108,6 @@ const Depoimentos = {
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
       nome: 'NOVO CLIENTE',
-      foto: '/teste4.jpg',
       Montador: 'Anderson',
     },
     {
@@ -120,12 +115,11 @@ const Depoimentos = {
       esquerda: (
         <Image src={quotationEsquerda} alt='quotationDireita' width={20} height={20} />
       ),
-      comentario: 'O melhor montador que já contratei',
+      comentario: 'É um melhor montador que já contratei, com certeza',
       direita: (
         <Image src={quotationDireita} alt='quotationDireita' width={20} height={20} />
       ),
-      nome: 'NOVO CLIENTE',
-      foto: '/teste4.jpg',
+      nome: 'Maria Fernanda',
       Montador: 'Anderson',
     },
   ],

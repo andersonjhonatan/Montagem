@@ -38,7 +38,6 @@ const renderizarDepoimentos = () => {
             <strong>Cliente: {depoimento.nome}</strong>
           </p>
           <figure className={style.fotoCliente}>
-            <Image src={depoimento.foto} alt='depoimentos' width={100} height={100} />
             <strong>Montador: {depoimento.Montador}</strong>
           </figure>
         </>

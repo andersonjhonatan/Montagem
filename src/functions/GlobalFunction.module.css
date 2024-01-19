@@ -1,5 +1,5 @@
 .link {
-  color: cadetblue;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 .buttonLink {
@@ -14,7 +14,7 @@
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background-color: rgb(92, 162, 129);
+  background-color: rgb(0, 0, 0);
   transform: scaleX(0);
   transition: transform 0.2s;
   transform-origin: right;
@@ -71,9 +71,7 @@
   height: auto;
   display: flex;
   align-items: center;
-  gap: 1rem;
   border-radius: 1rem;
-  box-shadow: 0 0 1.2rem 2px rgba(95, 158, 160, 0.342);
 }
 
 .depoimento {

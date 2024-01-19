@@ -1,45 +1,47 @@
-import { renderizarFotos } from '../functions/Global';
-import styles from '../styles/Servicos.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-import back from '../../public/back-svgrepo-com.svg';
-import montagem from '../../public/servicos/montagem.png';
-import desmontagem from '../../public/servicos/desmontagem.png';
-import manutencao from '../../public/servicos/manutenção.png';
-import picture from '../../public/picture-svgrepo-com.svg';
+import { renderizarFotos } from '../functions/Global'
+import styles from '../styles/Servicos.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import back from '../../public/back-svgrepo-com.svg'
+import montagem from '../../public/servicos/montagem.png'
+import desmontagem from '../../public/servicos/desmontagem.png'
+import manutencao from '../../public/servicos/manutenção.png'
+import picture from '../../public/picture-svgrepo-com.svg'
 
 const Servicos = () => {
   return (
     <div className={styles.servicos}>
-      <section className={styles.section}>
-        <Link href='/'>
-          <Image
-            src={back}
-            alt='Back'
-            className={styles.backButton}
-            width={60}
-            height={60}
-          />
-        </Link>
-        <h1 className={styles.nossoServic}>Nossos Serviços</h1>
-        <Link href='#galeria'>
-          <Image
-            src={picture}
-            alt='picture'
-            className={styles.picture}
-            width={60}
-            height={60}
-          />
-        </Link>
-      </section>
-      <div className={styles.traco}></div>
+      <div className={styles.mainServicosHeader}>
+        <section className={styles.section}>
+          <Link href="/">
+            <Image
+              src={back}
+              alt="Back"
+              className={styles.backButton}
+              width={60}
+              height={60}
+            />
+          </Link>
+          <h1 className={styles.nossoServic}>Nossos Serviços</h1>
+          <Link href="#galeria">
+            <Image
+              src={picture}
+              alt="picture"
+              className={styles.picture}
+              width={60}
+              height={60}
+            />
+          </Link>
+        </section>
+      </div>
+      
       <div className={styles.bakcGround}>
         <div className={styles.mainServicos}>
           <div className={styles.mainMontagem}>
             <figure className={styles.mainFigure1}>
               <Image
                 src={montagem}
-                alt='montagem'
+                alt="montagem"
                 className={styles.montagem}
                 width={780}
                 height={780}
@@ -74,7 +76,7 @@ const Servicos = () => {
             <figure className={styles.mainFigure}>
               <Image
                 src={desmontagem}
-                alt='desmontagem'
+                alt="desmontagem"
                 className={styles.desmontagem}
                 width={780}
                 height={780}
@@ -85,7 +87,7 @@ const Servicos = () => {
             <figure className={styles.mainFigure2}>
               <Image
                 src={manutencao}
-                alt='manutençao'
+                alt="manutençao"
                 className={styles.manutencao}
                 width={780}
                 height={780}
@@ -106,7 +108,7 @@ const Servicos = () => {
             </section>
           </div>
         </div>
-        <div className={styles.galeriaDeFotos} id='galeria'>
+        <div className={styles.galeriaDeFotos} id="galeria">
           <section>
             <h2 className={styles.globalH2}>Galeria de Fotos</h2>
             <div className={styles.tracoH2}></div>
@@ -115,7 +117,7 @@ const Servicos = () => {
         <figure className={styles.render}>{renderizarFotos()}</figure>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Servicos;
+export default Servicos
