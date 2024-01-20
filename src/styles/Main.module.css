@@ -67,6 +67,14 @@
   height: auto;
 }
 
+.backFerramentas {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: auto;
+  opacity: 40%;
+}
+
 .montadeDeMoveisPicture2 {
   display: flex;
   align-items: center;

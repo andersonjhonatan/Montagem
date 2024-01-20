@@ -34,7 +34,7 @@ const Servicos = () => {
           </Link>
         </section>
       </div>
-      
+
       <div className={styles.bakcGround}>
         <div className={styles.mainServicos}>
           <div className={styles.mainMontagem}>
@@ -108,13 +108,15 @@ const Servicos = () => {
             </section>
           </div>
         </div>
-        <div className={styles.galeriaDeFotos} id="galeria">
-          <section>
-            <h2 className={styles.globalH2}>Galeria de Fotos</h2>
-            <div className={styles.tracoH2}></div>
-          </section>
+        <div className={styles.contentGaleria}>
+          <div className={styles.galeriaDeFotos} id="galeria">
+            <section>
+              <h2 className={styles.globalH2}>Galeria de Fotos</h2>
+              <div className={styles.tracoH2}></div>
+            </section>
+          </div>
+          <figure className={styles.render}>{renderizarFotos()}</figure>
         </div>
-        <figure className={styles.render}>{renderizarFotos()}</figure>
       </div>
     </div>
   )

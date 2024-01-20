@@ -131,6 +131,10 @@
   line-height: 30px;
 }
 
+.contentGaleria {
+  background-image: url('../../public/ferramentas3.png');
+}
+
 .galeriaDeFotos {
   display: flex;
   flex-direction: column;
@@ -159,8 +163,9 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin: 3rem 0 2rem 0;
-  background-color: #ffffff;
+  margin: 3rem 0 0 0;
+  padding-bottom: 6rem;
+  background-image: url('../../public/ferramentas3.png');
 }
 
 .bakcGround {

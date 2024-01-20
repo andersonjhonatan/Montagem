@@ -1,43 +1,61 @@
+import Link from 'next/link'
 import styles from '../styles/Footer.module.css'
+import { CiInstagram } from 'react-icons/ci'
+import { FiPhoneCall } from 'react-icons/fi'
+import { MdOutlineEmail } from 'react-icons/md'
+
 const Footer = () => {
   return (
     <footer>
       <div className={styles.container}>
         <div className={styles.menuFooter}>
-          <h1 className={styles.title}>Seu Montador</h1>
+          <section className={styles.logoFooter}>
+            <h1 className={styles.title}>Seu Montador</h1>
+            <p>Seus móveis em boas mãos!</p>
+          </section>
           <ul>
             <li>
-              <a href="#beneficios">Benefícios</a>
+              <Link href="#beneficios">Benefícios</Link>
             </li>
             <li>
-              <a href="#servicos">Serviços</a>
+              <Link href="/nossoservicos">Serviços</Link>
             </li>
             <li>
-              <a href="#montagem">Montagem</a>
+              <Link href="#montagem">Montagem</Link>
             </li>
             <li>
-              <a href="#depoimentos">Depoimentos</a>
+              <Link href="#depoimentos">Depoimentos</Link>
             </li>
           </ul>
 
           <div className={styles.contentRedes}>
-            <section>
-              <h2 className={styles.title}>Contato</h2>
-              <p>Telefone: (83) 99359-5471</p>
-              <p>Email: ajhonatan76@gmail.com</p>
+            <section className={styles.contentPhoneEmail}>
+              <h2 className={styles.titleContact}>Contato</h2>
+              <div className={styles.contentPhone}>
+                <FiPhoneCall size={20} className={styles.iconPhone} />
+                <p>(83) 9 9359-5471</p>
+              </div>
+              <div className={styles.contentEmail}>
+                <MdOutlineEmail size={20} className={styles.iconEmail} />
+
+                <p>ajhonatan76@gmail.com</p>
+              </div>
             </section>
-            <section>
-              <h2 className={styles.title}>Redes Sociais</h2>
-              <p>Instagram: @seumontador</p>
-              <p>Facebook: SeuMontador</p>
+            <section className={styles.contentRedeSocial}>
+              <h2 className={styles.titleRedesSocial}>Redes Sociais</h2>
+              <div>
+                <Link href="https://www.instagram.com/montadorseu/" target="_blank">
+                  <CiInstagram size={30} className={styles.iconInstagram} />
+                </Link>
+              </div>
             </section>
           </div>
 
-          <div className={styles.horarios}>
-            <h2 className={styles.title}>Horários de Atendimento</h2>
+          <div className={styles.horarios} id='horario'>
+            <h2 className={styles.titleHorarios}>Horários de Atendimento</h2>
             <div className={styles.gridContainer}>
-              <div className={styles.day}>Dia</div>
-              <div className={styles.time}>Horário</div>
+              <div className={styles.dayTitle}>Dia</div>
+              <div className={styles.timeTitle}>Horário</div>
 
               <div className={styles.day}>Segunda</div>
               <div className={styles.time}>09:00 - 19:00</div>

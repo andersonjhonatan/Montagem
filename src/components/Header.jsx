@@ -1,36 +1,38 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import { renderizarLinks } from '../functions/Global'
 import styles from '../styles/Header.module.css'
+import { BsAlarm } from 'react-icons/bs'
+import Link from 'next/link'
 
 const Header = (props) => {
-
-  const [showBorder, setShowBorder] = useState(false);
+  const [showBorder, setShowBorder] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY < 80) {
-        setShowBorder(false);
+        setShowBorder(false)
       } else {
-        setShowBorder(true);
+        setShowBorder(true)
       }
-    };
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
       <h1>Seu Montador</h1>
-      <ul className={styles.linksButton}>
-        {renderizarLinks()}
-      </ul>
+      <ul className={styles.linksButton}>{renderizarLinks()}</ul>
+      <Link href="#horario">
+        <BsAlarm size={25} className={styles.iconAlarm} />
+      </Link>
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

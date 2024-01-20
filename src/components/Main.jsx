@@ -55,19 +55,19 @@ const Main = () => {
           <Image
             src={ferramentas}
             alt="montador e furadeira"
-            className={styles.montadeDeMoveisPicture1}
+            className={styles.backFerramentas}
             priority
           />
           <Image
             src={ferramentas}
             alt="montador e furadeira"
-            className={styles.montadeDeMoveisPicture1}
+            className={styles.backFerramentas}
             priority
           />
           <Image
             src={ferramentas}
             alt="montador e furadeira"
-            className={styles.montadeDeMoveisPicture1}
+            className={styles.backFerramentas}
             priority
           />
         </section>
