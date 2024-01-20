@@ -23,7 +23,7 @@ const Depoimentos = () => {
     };
   }, []);
   return (
-    <div  data-aos="fade-down" id='depoimentos'>
+    <div className={styles.depoimentos} data-aos="fade-down" id='depoimentos'>
       <h2 className={styles.h2}>Depoimentos de Clientes</h2>
       <div className={styles.mainDepoi} >
         <section>{renderizarDepoimentos()}</section>

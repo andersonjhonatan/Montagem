@@ -24,7 +24,7 @@ const Agende = () => {
   return (
     <div>
       <section className={styles.agende} data-aos='fade'>
-        <h2> Venha contratar seu Montador de Móveis agora !! </h2>
+        <h2> Venha agendar seu Montador de Móveis</h2>
         <div className={styles.traco}></div>
         <p>
           Facilite sua vida e garanta a montagem perfeita dos seus móveis com o nosso

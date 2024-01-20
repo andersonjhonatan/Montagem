@@ -1,72 +1,93 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import styles from '../styles/Main.module.css';
-import Logo from '../../public/Logo.png';
-import Logo2 from '../../public/Logo2.png';
-import { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import styles from '../styles/Main.module.css'
+import Logo from '../../public/Logo.png'
+import Logo2 from '../../public/arrasta2.png'
+import { useEffect, useState } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import montagem from '../../public/arrasta.png'
+import ferramentas from '../../public/ferramentas.png'
 
 const Main = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Defina a duração da animação em milissegundos
-    });
+      duration: 1000, 
+    })
 
     const handleScroll = () => {
-      AOS.refresh();
-    };
+      AOS.refresh()
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
-    <main className={styles.main} id='montagem' data-aos='fade-down'>
+    <main className={styles.main} id="montagem" data-aos="fade-down">
       <div className={styles.montagem}>
         <section className={styles.bemVindo}>
-          <h1>
-            Montagem <span>de</span> Móveis
-          </h1>
-          <p>
-            <strong>Bem-vindo ao nosso site!</strong> Se você adquiriu um novo móvel e
-            precisa de ajuda profissional na montagem, estamos aqui para ajudar. Nossa
-            equipe experiente e confiável de montadores de móveis está pronta para
-            garantir que seu novo móvel seja montado com precisão e cuidado. Entre em
-            contato conosco para agendar o serviço e desfrute de um serviço de montagem de
-            qualidade. Estamos ansiosos para atendê-lo!
+          <h1 className={styles.tituloMontagem}>Montagem de Móveis</h1>
+          <p className={styles.paragrafoTitle}>
+            <strong className="text-6xl">Bem-vindo ao nosso site!</strong> Se você
+            adquiriu um novo móvel e precisa de ajuda profissional na montagem, estamos
+            aqui para ajudar. Nossa equipe experiente e confiável de montadores de móveis
+            está pronta para garantir que seu novo móvel seja montado com precisão e
+            cuidado. Entre em contato conosco para agendar o serviço e desfrute de um
+            serviço de montagem de qualidade. Estamos ansiosos para atendê-lo!
           </p>
           <button>AGENDAR AGORA</button>
         </section>
         <section className={styles.imagem}>
           <Image
-            src={Logo}
-            alt='montador e furadeira'
+            src={montagem}
+            alt="montador e furadeira"
             className={styles.montadeDeMoveisPicture1}
             priority
           />
         </section>
       </div>
+
+      <section className={styles.imagemFerramentas}>
+          <Image
+            src={ferramentas}
+            alt="montador e furadeira"
+            className={styles.montadeDeMoveisPicture1}
+            priority
+          />
+          <Image
+            src={ferramentas}
+            alt="montador e furadeira"
+            className={styles.montadeDeMoveisPicture1}
+            priority
+          />
+          <Image
+            src={ferramentas}
+            alt="montador e furadeira"
+            className={styles.montadeDeMoveisPicture1}
+            priority
+          />
+        </section>
       <div className={styles.montagem1}>
         <section className={styles.sectionImagem1}>
           <Image
             src={Logo2}
-            alt='montador e furadeira'
+            alt="montador e furadeira"
             className={styles.montadeDeMoveisPicture2}
             priority
           />
         </section>
-        <section data-aos='fade-down' className={styles.sectionPara1}>
+        <section data-aos="fade-down" className={styles.sectionPara1}>
           <h3>Como Funciona</h3>
-          <span>
+          <div className={styles.funcionaParag}>
             <strong>
-              Experimente nosso serviço profissional de montagem de móveis:{' '}
+              Experimente nosso serviço profissional de montagem de móveis
             </strong>
             <p>
-              agende com flexibilidade, montador experiente, ferramentas adequadas,
+              Agende com flexibilidade, montador experiente, ferramentas adequadas,
               montagem rápida e precisa, serviço completo com ajustes necessários,
               satisfação garantida. Entre em contato para agendar. Ao utilizar nosso
               serviço de montagem de móveis, você contará com uma experiência profissional
@@ -85,11 +106,11 @@ const Main = () => {
               Não perca mais tempo, entre em contato e deixe que cuidemos de tudo para
               você.
             </p>
-          </span>
+          </div>
         </section>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

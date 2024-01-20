@@ -1,3 +1,8 @@
+.depoimentos {
+  background: #c5c5c557;
+  padding-top: 4rem;
+}
+
 .mainDepoi {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -14,6 +19,7 @@
   text-align: center;
   width: 100vw;
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .mainDepoi section {

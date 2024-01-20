@@ -1,28 +1,46 @@
-.main {
-  margin: 3rem 0 0 0;
-  justify-content: center;
-  align-items: center;
+.containerBeneficio {
   display: flex;
   flex-direction: column;
+  background: #c5c5c557;
+  margin-top: 8rem;
 }
 
-.beneficios {
+.titleBeneficios {
   display: flex;
-  padding: 1rem 5rem;
   justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  margin: 3rem 0 0 0;
-}
-
-.title {
-  text-align: center;
+  align-items: center;
   color: var(--text-principal);
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 6rem;
 }
 
 .paragBeneficio {
   margin: 0 auto;
   text-align: center;
   width: 50vw;
-  margin-top: 1rem;
+  color: rgb(138, 138, 138);
+  font-size: 20px;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 6rem;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--text-principal);
 }
