@@ -3,9 +3,53 @@
   color: white;
   padding: 0.4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  margin: 4rem 0 0 0;
+}
+
+.menuFooter {
+  display: flex;
+  gap: 4px;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.menuFooter ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  height: 100%;
+  align-items: start;
+}
+
+.contentRedes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.horarios {
+  background-color: #ccfdda;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0px 1px 10px 5px rgba(25, 26, 25, 0.34);
+  color: black;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.day {
+  display: flex;
 }
 
 .content {
