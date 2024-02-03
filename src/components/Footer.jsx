@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link href="https://www.instagram.com/montadorseu/" target="_blank">
                   <CiInstagram size={30} className={styles.iconInstagram} />
                 </Link>
-                <Link href="https://www.instagram.com/montadorseu/" target="_blank">
+                <Link href="https://contate.me/montador-anderson" target="_blank">
                   <MdOutlineWhatsapp size={30} className={styles.iconInstagram} />
                 </Link>
               </div>
