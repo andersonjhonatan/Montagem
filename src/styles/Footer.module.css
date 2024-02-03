@@ -93,6 +93,11 @@
   width: 100%;
 }
 
+.contentRedesFigure {
+  display: flex;
+  gap: 1rem;
+}
+
 .iconInstagram {
   color: #ff7700;
   display: flex;

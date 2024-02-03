@@ -9,5 +9,7 @@ module.exports = {
     require('tailwindcss'),
     require('autoprefixer'),
   ],
-  purge: [],
+  purge: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
 };

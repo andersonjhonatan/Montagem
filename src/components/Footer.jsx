@@ -3,6 +3,7 @@ import styles from '../styles/Footer.module.css'
 import { CiInstagram } from 'react-icons/ci'
 import { FiPhoneCall } from 'react-icons/fi'
 import { MdOutlineEmail } from 'react-icons/md'
+import { MdOutlineWhatsapp } from 'react-icons/md'
 
 const Footer = () => {
   return (
@@ -43,15 +44,18 @@ const Footer = () => {
             </section>
             <section className={styles.contentRedeSocial}>
               <h2 className={styles.titleRedesSocial}>Redes Sociais</h2>
-              <div>
+              <div className={styles.contentRedesFigure}>
                 <Link href="https://www.instagram.com/montadorseu/" target="_blank">
                   <CiInstagram size={30} className={styles.iconInstagram} />
+                </Link>
+                <Link href="https://www.instagram.com/montadorseu/" target="_blank">
+                  <MdOutlineWhatsapp size={30} className={styles.iconInstagram} />
                 </Link>
               </div>
             </section>
           </div>
 
-          <div className={styles.horarios} id='horario'>
+          <div className={styles.horarios} id="horario">
             <h2 className={styles.titleHorarios}>Horários de Atendimento</h2>
             <div className={styles.gridContainer}>
               <div className={styles.dayTitle}>Dia</div>
