@@ -37,14 +37,14 @@ const Agende = () => {
   return (
     <div>
       <section className={styles.agende} data-aos='fade'>
-        <h2> Venha agendar seu Montador de Móveis</h2>
+        <h2> O que ta esperando ?</h2>
         <div className={styles.traco}></div>
         <p>
           Facilite sua vida e garanta a montagem perfeita dos seus móveis com o nosso
           serviço profissional. Contrate agora mesmo o melhor montador de móveis para o
           seu projeto!
         </p>
-        <button onClick={onClickAgenda}>Contrate agora</button>
+        <button onClick={onClickAgenda} className={styles.buttonAgendar}>Contrate agora</button>
       </section>
       {isModalOpen && <ModalAgendamento onClose={closeModal} />}
 
