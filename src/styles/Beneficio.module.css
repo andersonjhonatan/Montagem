@@ -24,7 +24,7 @@
   font-size: 20px;
 }
 
-.main {
+.mains {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -43,4 +43,35 @@
 .title {
   text-align: center;
   color: var(--text-principal);
+}
+
+@media screen and (max-width: 1024px) {
+  .containerBeneficio {
+    padding: 0;
+    gap: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .titleBeneficios {
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .paragBeneficio {
+    width: 90%;
+  }
+
+  .mains {
+    margin-top: 2rem;
+  }
+
+  .beneficios {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
 }

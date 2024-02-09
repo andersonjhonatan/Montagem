@@ -21,7 +21,7 @@ const renderizarBeneficios = () => {
     return (
       <div key={beneficio.id} className={style.beneficiosMain} id='beneficios'>
         <h4>{beneficio.exp}</h4>
-        <figure>{beneficio.foto}</figure>
+        <figure className={style.fotoBeneficio}>{beneficio.foto}</figure>
         <p className={style.mensagem}>{beneficio.mensagem}</p>
       </div>
     );

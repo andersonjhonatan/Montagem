@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 const Beneficios = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Defina a duração da animação em milissegundos
+      duration: 1000, 
     })
 
     const handleScroll = () => {
@@ -32,7 +32,7 @@ const Beneficios = () => {
           profissional especializado nessa área
         </p>
       </div>
-      <div className={styles.main} >
+      <div className={styles.mains} >
         <div className={styles.beneficios} data-aos="fade-right">
           {renderizarBeneficios()}
         </div>
