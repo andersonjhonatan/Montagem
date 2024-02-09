@@ -7,13 +7,13 @@ import { MdOutlineWhatsapp } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.menuFooter}>
           <section className={styles.logoFooter}>
             <h1 className={styles.title}>Seu Montador</h1>
             <p>Seus móveis em boas mãos!</p>
           </section>
+        <div className={styles.menuFooter}>
           <ul>
             <li>
               <Link href="#beneficios">Benefícios</Link>
@@ -81,11 +81,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
         <div className={styles.content}>
           <p>&copy; 2023 - Seu Montador - Todos os direitos reservados -</p>
           <p>Desenvolvido por: Anderson Jhonatan</p>
         </div>
-      </div>
     </footer>
   )
 }

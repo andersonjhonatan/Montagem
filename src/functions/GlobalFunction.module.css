@@ -93,4 +93,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .mainDepoimentos {
+    padding: 1rem;
+  }
 }

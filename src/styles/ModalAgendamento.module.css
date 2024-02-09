@@ -5,6 +5,8 @@
   justify-items: center;
   display: flex;
   align-items: center;
+  background-image: url('../../public/ferramentas3.png');
+  margin-top: 1rem;
 }
 
 .modal {

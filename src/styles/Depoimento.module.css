@@ -1,6 +1,6 @@
 .depoimentos {
   background: #c5c5c557;
-  padding-top: 8rem;
+  padding-top: 1rem;
   background-image: url('../../public/ferramentas3.png');
 }
 
@@ -10,12 +10,12 @@
   padding: 1rem;
   white-space: nowrap;
   scroll-behavior: smooth;
-  aspect-ratio: 4/1;
 }
 
 .h2 {
   color: var(--text-principal);
   text-align: center;
+  width: 100vw;
   margin-bottom: 3rem;
   font-size: 2rem;
 }
@@ -32,4 +32,21 @@
   align-items: center;
   gap: 1rem;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .depoimentos {
+    padding-bottom: 2rem;
+  }
+  .mainDepoi section {
+    margin: 0;
+  }
+
+  .mainDepoi figure {
+    margin: 0;
+  }
+
+  .h2 {
+    margin-top: 1rem;
+  }
 }
