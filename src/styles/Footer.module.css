@@ -173,23 +173,19 @@
     flex-direction: row;
     gap: 2rem;
     width: 100%;
-
+    margin-top: 2rem;
     flex-wrap: wrap;
   }
 
   .contentPhoneEmail {
     flex: 1;
-    justify-content: center;
     align-items: center;
-    text-align: center;
   }
   .titleContact {
     justify-content: center;
   }
   .contentRedeSocial {
     flex: 1;
-    align-items: center;
-    text-align: center;
   }
 
   .titleRedesSocial {
@@ -218,5 +214,34 @@
   .content {
     font-size: 14px;
     flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .contentPhoneEmail {
+    flex: 1;
+    align-items: start;
+  }
+  .titleContact {
+    justify-content: center;
+  }
+  .contentRedeSocial {
+    flex: 1;
+  }
+
+  .contentRedes {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contentPhoneEmail {
+    align-items: center;
+  }
+
+  .titleContact {
+    font-size: 20px;
+  }
+  .titleRedesSocial {
+    font-size: 20px;
   }
 }
