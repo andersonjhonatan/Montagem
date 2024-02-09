@@ -25,13 +25,15 @@ const Header = (props) => {
   }, [])
 
   return (
-    <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
-      <h1>Seu Montador</h1>
-      <ul className={styles.linksButton}>{renderizarLinks()}</ul>
-      <Link href="#horario">
-        <BsAlarm size={25} className={styles.iconAlarm} />
-      </Link>
-    </nav>
+    <div className={styles.header}>
+      <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
+        <h1>Seu Montador</h1>
+        <ul className={styles.linksButton}>{renderizarLinks()}</ul>
+        <Link href="#horario">
+          <BsAlarm size={25} className={styles.iconAlarm} />
+        </Link>
+      </nav>
+    </div>
   )
 }
 

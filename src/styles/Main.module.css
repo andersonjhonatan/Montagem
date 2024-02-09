@@ -6,16 +6,15 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 100vw;
   z-index: 1;
   margin-top: calc(1rem + 2 * 1rem);
+  width: 100%;
 }
 
 .montagem {
   display: flex;
   gap: 1rem;
   margin-top: calc(1rem + 2 * 1.5rem);
-  width: 70%;
 }
 
 .tituloMontagem {
@@ -147,7 +146,6 @@
   display: flex;
   justify-content: space-around;
   width: 90%;
-  padding: 1rem 0;
   gap: 6rem;
   padding: 0 6rem 0 4rem;
   margin-top: calc(2rem + 2 * 2rem);
@@ -184,4 +182,87 @@
   font-size: 30px;
   margin-top: 2rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .tituloMontagem {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paragrafoTitle {
+    font-size: 20px;
+  }
+
+  .paragrafoTitle strong {
+    font-size: 22px;
+  }
+  .montagem1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .montagem {
+    display: flex;
+    padding-left: 0;
+    width: 90%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bemVindo {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imagem {
+    display: none;
+  }
+
+  .montadeDeMoveisPicture1 {
+    display: none;
+  }
+  .backFerramentas {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .montadeDeMoveisPicture2 {
+    display: none;
+  }
+  .montagem1 {
+    margin-top: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .sectionPara1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .funcionaParag {
+    font-size: 20px;
+  }
+
+  .funcionaParag strong {
+    font-size: 22px;
+  }
 }

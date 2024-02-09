@@ -1,24 +1,28 @@
+.header {
+  width: 100vw;
+}
+
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #96b7ffe9;
+  padding: 1.5rem;
   position: fixed;
-  padding: 1.5rem 10rem;
-  width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 2;
 }
 
 .nav1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #ccfdda;
-  position: fixed;
-  padding: 1.5rem 10rem;
-  width: 100vw;
+  padding: 1.5rem;
   top: 0;
+  width: 100%;
+  position: fixed;
   z-index: 2;
 }
 
@@ -60,4 +64,32 @@
 .nav .iconAlarm {
   cursor: pointer;
   color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .nav1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .nav .linksButton {
+    display: none;
+  }
+
+  .nav1 .linksButton {
+    display: none;
+  }
+
+  .iconAlarm {
+    display: none;
+  }
 }

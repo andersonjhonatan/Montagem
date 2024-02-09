@@ -1,10 +1,14 @@
 'use client';
 import styles from '../styles/Agende.module.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { useRouter } from 'next/navigation';
+import ModalAgendamento from './ModalAgendamento';
 const Agende = () => {
+  const router = useRouter()
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Defina a duração da animação em milissegundos
@@ -21,6 +25,15 @@ const Agende = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const onClickAgenda = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <section className={styles.agende} data-aos='fade'>
@@ -31,8 +44,10 @@ const Agende = () => {
           serviço profissional. Contrate agora mesmo o melhor montador de móveis para o
           seu projeto!
         </p>
-        <button>Contrate agora</button>
+        <button onClick={onClickAgenda}>Contrate agora</button>
       </section>
+      {isModalOpen && <ModalAgendamento onClose={closeModal} />}
+
     </div>
   );
 };
