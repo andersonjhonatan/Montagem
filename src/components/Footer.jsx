@@ -18,7 +18,6 @@ const Footer = () => {
           height={150}
           className={styles.logo}
         />
-            <p>Seus móveis em boas mãos!</p>
           </section>
         <div className={styles.menuFooter}>
           <ul>
