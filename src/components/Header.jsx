@@ -4,7 +4,7 @@ import { renderizarLinks } from '../functions/Global'
 import styles from '../styles/Header.module.css'
 import { BsAlarm } from 'react-icons/bs'
 import Link from 'next/link'
-
+import Image from 'next/image'
 const Header = (props) => {
   const [showBorder, setShowBorder] = useState(false)
 
@@ -27,7 +27,13 @@ const Header = (props) => {
   return (
     <div className={styles.header}>
       <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
-        <h1>Seu Montador</h1>
+      <Image
+          src="/logo-insta.png"
+          alt="Logo"
+          width={100}
+          height={100}
+          className={styles.logo}
+        />
         <ul className={styles.linksButton}>{renderizarLinks()}</ul>
         <Link href="#horario">
           <BsAlarm size={25} className={styles.iconAlarm} />

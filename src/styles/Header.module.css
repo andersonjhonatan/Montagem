@@ -66,6 +66,21 @@
   color: rgb(255, 255, 255);
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+
 @media screen and (max-width: 1024px) {
   .nav {
     display: flex;
