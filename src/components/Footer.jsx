@@ -4,13 +4,20 @@ import { CiInstagram } from 'react-icons/ci'
 import { FiPhoneCall } from 'react-icons/fi'
 import { MdOutlineEmail } from 'react-icons/md'
 import { MdOutlineWhatsapp } from 'react-icons/md'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
           <section className={styles.logoFooter}>
-            <h1 className={styles.title}>Seu Montador</h1>
+            <Image
+          src="/logo-footer.png"
+          alt="Logo"
+          width={150}
+          height={150}
+          className={styles.logo}
+        />
             <p>Seus móveis em boas mãos!</p>
           </section>
         <div className={styles.menuFooter}>
