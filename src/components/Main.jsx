@@ -9,6 +9,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import montagem from '../../public/arrasta.png'
 import ferramentas from '../../public/ferramentas.png'
+import Link from 'next/link'
 
 const Main = () => {
   useEffect(() => {
@@ -38,7 +39,7 @@ const Main = () => {
             está pronta para garantir que seu novo móvel seja montado com precisão e
             cuidado.
           </p>
-          <button>AGENDAR AGORA</button>
+          <Link href="https://contate.me/montador-anderson" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
         </section>
         <section className={styles.imagem}>
           <Image

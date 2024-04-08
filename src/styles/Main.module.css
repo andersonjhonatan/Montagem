@@ -81,7 +81,7 @@
   height: auto;
 }
 
-.montagem > section > button {
+.montagem > section > .button {
   padding: 0.8em 1.75em;
   background-color: transparent;
   border-radius: 6px;
@@ -98,10 +98,11 @@
   color: var(--color);
   margin-top: 4rem;
   width: 50%;
+  text-align: center;
 }
 
-.montagem > section > button::after,
-.montagem > section > button::before {
+.montagem > section > .button::after,
+.montagem > section > .button::before {
   content: '';
   display: block;
   height: 100%;
@@ -114,24 +115,24 @@
   transition: 0.5s ease-out;
   background-color: var(--color);
 }
-.montagem > section > button::before {
+.montagem > section > .button::before {
   top: -50%;
   left: -25%;
   transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
 }
 
-.montagem > section > button:hover::before {
+.montagem > section > .button:hover::before {
   transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
 }
 
-.montagem > section > button:hover::after {
+.montagem > section > .button:hover::after {
   transform: skew(45deg) translate(-50%, -50%);
 }
-.montagem > section > button:hover {
+.montagem > section > .button:hover {
   color: var(--color2);
   font-weight: 400;
 }
-.montagem > section > button:active {
+.montagem > section > .button:active {
   filter: brightness(0.7);
   transform: scale(0.98);
 }
