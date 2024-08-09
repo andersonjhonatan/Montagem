@@ -42,9 +42,9 @@ const Agende = () => {
           serviço profissional. Contrate agora mesmo o melhor montador de móveis para o
           seu projeto!
         </p>
-        <button onClick={onClickAgenda} className={styles.buttonAgendar}>
+        {/*  <button onClick={onClickAgenda} className={styles.buttonAgendar}>
           Contrate agora
-        </button>
+        </button> */}
       </section>
       {isModalOpen && <ModalAgendamento onClose={closeModal} />}
     </div>

@@ -11,7 +11,7 @@ export default function Index() {
       <Main />
       <Beneficios />
       <Agende />
-      <Depoimentos />
+      {/* <Depoimentos /> */}
     </div>
   )
 }
