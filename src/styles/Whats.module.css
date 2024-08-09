@@ -1,0 +1,15 @@
+.whatsButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  z-index: 10;
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff7700;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
