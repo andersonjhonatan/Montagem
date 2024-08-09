@@ -89,6 +89,7 @@
 @media screen and (max-width: 1024px) {
   .agende {
     padding: 0;
+    padding-bottom: 2rem;
   }
   .agende h2 {
     width: 90%;
