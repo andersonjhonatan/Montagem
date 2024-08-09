@@ -39,7 +39,7 @@ const Main = () => {
             está pronta para garantir que seu novo móvel seja montado com precisão e
             cuidado.
           </p>
-          <Link href="https://contate.me/montador-anderson" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
+          <Link href="https://contate.me/seumontador" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
         </section>
         <section className={styles.imagem}>
           <Image
