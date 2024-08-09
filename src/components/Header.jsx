@@ -28,11 +28,12 @@ const Header = (props) => {
     <div className={styles.header}>
       <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
       <Image
-          src="/logo-insta.png"
+          src="/logo-s.png"
           alt="Logo"
           width={100}
           height={100}
           className={styles.logo}
+          priority
         />
         <ul className={styles.linksButton}>{renderizarLinks()}</ul>
         <Link href="#horario">
