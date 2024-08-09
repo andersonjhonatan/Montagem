@@ -201,6 +201,17 @@
   .logoFooter {
     padding-left: 0;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 0 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

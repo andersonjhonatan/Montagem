@@ -30,9 +30,9 @@ const Footer = () => {
             <li>
               <Link href="#montagem">Montagem</Link>
             </li>
-            <li>
+           {/*  <li>
               <Link href="#depoimentos">Depoimentos</Link>
-            </li>
+            </li> */}
           </ul>
 
           <div className={styles.contentRedes}>
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
         <div className={styles.content}>
-          <p>&copy; 2023 - Seu Montador - Todos os direitos reservados -</p>
+          <p>&copy; 2023 - Seu Montador - Todos os direitos reservados</p>
           <p>Desenvolvido por: Anderson Jhonatan</p>
         </div>
     </footer>
