@@ -33,9 +33,7 @@ const Main = () => {
         <section className={styles.bemVindo}>
           <h1 className={styles.tituloMontagem}>Montador de Móveis</h1>
           <p className={styles.paragrafoTitle}>
-            <strong className="text-6xl">Bem-vindo ao meu site,</strong> Se você
-            adquiriu um novo móvel e precisa de ajuda profissional na montagem, estou
-            aqui para ajudar.
+            <strong className="text-6xl">Bem-vindo ao meu site,</strong> Eu acredito que cada montagem é uma jornada – começando com a visão do cliente e terminando com a satisfação de ver essa visão se tornar realidade. Com cada parafuso apertado e cada prateleira fixada, não estou apenas construindo móveis; estou construindo ambientes onde momentos especiais acontecerão, onde memórias serão criadas. E é isso que me motiva: saber que o meu trabalho é parte da sua história, do seu dia a dia. Monto móveis com a mesma paixão e cuidado que você tem ao escolher cada peça. Porque para mim, a montagem é mais que um serviço – é a arte de transformar sonhos em realidade.
           </p>
           <Link href="https://contate.me/seumontador" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
         </section>
