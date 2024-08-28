@@ -72,24 +72,8 @@ const Main = () => {
               Experimente nosso serviço profissional de montagem de móveis
             </strong>
             <p>
-              Agende com flexibilidade, montador experiente, ferramentas adequadas,
-              montagem rápida e precisa, serviço completo com ajustes necessários,
-              satisfação garantida. Entre em contato para agendar. Ao utilizar nosso
-              serviço de montagem de móveis, você contará com uma experiência profissional
-              excepcional. Nossa equipe de montadores altamente qualificados estará pronta
+              Experimente nosso serviço profissional de montagem de móveis com flexibilidade de agendamento, montadores experientes, ferramentas adequadas e montagem rápida e precisa. Incluímos ajustes necessários para garantir que seus móveis fiquem perfeitamente instalados, proporcionando uma experiência tranquila e satisfatória. Entre em contato para agendar!
               para atendê-lo.
-            </p>
-            <p>
-              Além da montagem em si, nosso serviço inclui ajustes necessários para deixar
-              seus móveis perfeitamente instalados. Estamos comprometidos em proporcionar
-              a máxima satisfação aos nossos clientes, buscando sempre superar suas
-              expectativas.
-            </p>
-            <p>
-              Conte conosco para tornar a montagem de seus móveis uma experiência
-              tranquila e sem complicações. Satisfação garantida é o nosso compromisso.
-              Não perca mais tempo, entre em contato e deixe que cuidemos de tudo para
-              você.
             </p>
           </div>
         </section>
