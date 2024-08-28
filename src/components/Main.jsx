@@ -33,7 +33,7 @@ const Main = () => {
         <section className={styles.bemVindo}>
           <h1 className={styles.tituloMontagem}>Montador de Móveis</h1>
           <p className={styles.paragrafoTitle}>
-            <strong className="text-6xl">Bem-vindo ao meu site</strong> Se você
+            <strong className="text-6xl">Bem-vindo ao meu site,</strong> Se você
             adquiriu um novo móvel e precisa de ajuda profissional na montagem, estou
             aqui para ajudar.
           </p>

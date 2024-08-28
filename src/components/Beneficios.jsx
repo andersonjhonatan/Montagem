@@ -27,9 +27,7 @@ const Beneficios = () => {
       <div className={styles.titleBeneficios}>
         <h1 className={styles.title}>Benefícios</h1>
         <p className={styles.paragBeneficio}>
-          Contratar um montador de móveis profissional traz diversos benefícios para você
-          e para o seu projeto. Aqui estão alguns dos melhores benefícios de contratar um
-          profissional especializado nessa área
+          Contratar um montador de móveis profissional traz diversos benefícios para você e para o seu projeto. Aqui estão alguns dos melhores benefícios de contratar um profissional especializado nessa área
         </p>
       </div>
       <div className={styles.mains} >

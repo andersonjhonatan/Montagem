@@ -76,3 +76,17 @@
     padding: 0 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .paragBeneficio {
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto; /* Hifeniza automaticamente as palavras longas */
+    padding: 0 2rem;
+    word-spacing: 2px;
+
+    text-indent: 20px;
+  }
+}

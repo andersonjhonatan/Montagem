@@ -35,7 +35,7 @@
 
 .paragrafoTitle strong {
   font-size: 32px;
-  color: rgb(255, 200, 0);
+  color: rgb(252, 136, 3);
 }
 
 .montagem {
@@ -174,7 +174,7 @@
 
 .funcionaParag strong {
   font-size: 26px;
-  color: rgb(255, 200, 0);
+  color: rgb(252, 136, 3);
   text-align: center;
 }
 
@@ -271,7 +271,28 @@
 @media screen and (max-width: 768px) {
   .montagem {
     display: flex;
-    padding-top: 5rem;
+    padding-top: 2rem;
     width: 90%;
+  }
+
+  .montagem > section > .button {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 4rem;
+    background-color: var(--text-principal);
+    color: var(--color2);
+    border-radius: 4px;
+    border: 1px solid var(--text-principal);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .imagemFerramentas {
+    margin-top: 5rem;
   }
 }
