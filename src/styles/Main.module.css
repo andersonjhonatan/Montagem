@@ -267,3 +267,11 @@
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .montagem {
+    display: flex;
+    padding-top: 5rem;
+    width: 90%;
+  }
+}
