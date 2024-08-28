@@ -1,0 +1,31 @@
+/* .card {
+  background-color: black;
+} */
+
+.cardbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--text-principal);
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.figureservices {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 2rem;
+}
+
+.figureservices img {
+  flex-shrink: 0; /* Garante que as imagens não encolham para caber no contêiner */
+  max-width: 100%; /* Mantém as imagens responsivas */
+  height: auto;
+}

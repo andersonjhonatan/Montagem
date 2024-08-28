@@ -31,13 +31,11 @@ const Main = () => {
     <main className={styles.main} id="montagem" data-aos="fade-down">
       <div className={styles.montagem}>
         <section className={styles.bemVindo}>
-          <h1 className={styles.tituloMontagem}>Montagem de Móveis</h1>
+          <h1 className={styles.tituloMontagem}>Montador de Móveis</h1>
           <p className={styles.paragrafoTitle}>
             <strong className="text-6xl">Bem-vindo ao nosso site!</strong> Se você
-            adquiriu um novo móvel e precisa de ajuda profissional na montagem, estamos
-            aqui para ajudar. Nossa equipe experiente e confiável de montadores de móveis
-            está pronta para garantir que seu novo móvel seja montado com precisão e
-            cuidado.
+            adquiriu um novo móvel e precisa de ajuda profissional na montagem, estou
+            aqui para ajudar.
           </p>
           <Link href="https://contate.me/seumontador" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
         </section>
