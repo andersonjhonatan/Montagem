@@ -44,7 +44,7 @@ const Beneficios = {
       id: 4,
       exp: 'Sem Preocupação',
       foto: <Image src={tools} alt='Sem Preocupação' width={100} height={100} />,
-      mensagem: 'Não precisa sem preocupar com as ferramentas',
+      mensagem: 'Não precisa se preocupar com as ferramentas',
     },
   ],
 };

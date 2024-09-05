@@ -24,8 +24,8 @@ const Footer = () => {
             <li>
               <Link href="#beneficios">Benefícios</Link>
             </li>
-            <li>
-              <Link href="/nossoservicos">Serviços</Link>
+            <li >
+              <Link className={styles.linkServicos} href="/nossoservicos">Serviços</Link>
             </li>
             <li>
               <Link href="#montagem">Montagem</Link>
