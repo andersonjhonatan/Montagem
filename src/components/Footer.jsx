@@ -48,7 +48,7 @@ const Footer = () => {
               <div className={styles.contentEmail}>
                 <MdOutlineEmail size={20} className={styles.iconEmail} />
 
-                <p>ajhonatan76@gmail.com</p>
+                <p>montadorseu@gmail.com</p>
               </div>
             </section>
             <section className={styles.contentRedeSocial}>
