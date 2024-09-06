@@ -42,7 +42,7 @@
 
 .title {
   text-align: center;
-  color: var(--text-principal);
+  color: var(--text-TitleSub);
 }
 
 @media screen and (max-width: 1024px) {

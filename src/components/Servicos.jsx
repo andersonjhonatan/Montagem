@@ -1,17 +1,16 @@
-import { renderizarFotos } from '../functions/Global'
 import styles from '../styles/Servicos.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
-import back from '../../public/back-svgrepo-com.svg'
 import montagem from '../../public/servicos/montagem.png'
 import desmontagem from '../../public/servicos/desmontagem.png'
 import manutencao from '../../public/servicos/manutenção.png'
-import picture from '../../public/picture-svgrepo-com.svg'
+import tv from '../../public/servicos/tv.png'
+import dobradicas from '../../public/servicos/dobradicas.png'
+import cortinas from '../../public/servicos/cortinas.png'
 
 const Servicos = () => {
   return (
     <div className={styles.servicos} id="nossoservicos">
-      <h1 className={styles.titulo} >Meus Serviços</h1>
+      <h1 className={styles.titulo}>Meus Serviços</h1>
       <div className={styles.bakcGround}>
         <div className={styles.mainServicos}>
           <div className={styles.mainMontagem}>
@@ -84,12 +83,49 @@ const Servicos = () => {
               </p>
             </section>
           </div>
+          {/* CORTINAS */}
+          <div className={styles.mainCortinas}>
+            <figure className={styles.mainFigure2}>
+              <Image
+                src={cortinas}
+                alt="manutençao"
+                className={styles.cortinas}
+                width={420}
+                height={420}
+              />
+            </figure>
+            <div className={styles.traco4}></div>
+          </div>
+          {/* TV */}
+          <div className={styles.mainTv}>
+            <figure className={styles.mainFigure2}>
+              <Image
+                src={tv}
+                alt="manutençao"
+                className={styles.tv}
+                width={420}
+                height={420}
+              />
+            </figure>
+            <div className={styles.traco5}></div>
+          </div>
+          {/* DOBRADICAS */}
+          <div className={styles.mainDobradicas}>
+            <figure className={styles.mainFigure2}>
+              <Image
+                src={dobradicas}
+                alt="manutençao"
+                className={styles.dobradicas}
+                width={420}
+                height={420}
+              />
+            </figure>
+            <div className={styles.traco6}></div>
+          </div>
         </div>
         <div className={styles.contentGaleria}>
           <div className={styles.galeriaDeFotos} id="galeria">
-            <section>
               <h2 className={styles.globalH2}>Registro de Fotos</h2>
-            </section>
           </div>
         </div>
       </div>

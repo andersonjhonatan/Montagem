@@ -12,7 +12,7 @@
 }
 
 .titulo {
-  color: var(--text-principal);
+  color: var(--text-TitleSub);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   font-size: 40px;
@@ -92,7 +92,10 @@
 
 .montagem,
 .desmontagem,
-.manutencao {
+.manutencao,
+.tv,
+.dobradicas,
+.cortinas {
   border-radius: 1rem;
 }
 
@@ -141,6 +144,7 @@
   font-size: 3rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   align-items: flex-start;
+  color: var(--text-TitleSub);
 }
 
 .globalParagrafo {
@@ -148,11 +152,13 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 30px;
   margin-top: 1rem;
+  color: var(--text-secundario);
 }
 
-/* .contentGaleria {
+.contentGaleria {
   background-image: url('../../public/ferramentas3.png');
-} */
+  margin-top: 2rem;
+}
 
 .galeriaDeFotos {
   display: flex;
@@ -161,13 +167,12 @@
 }
 
 .globalH2 {
-  color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   font-size: 40px;
   width: 100%;
-  color: var(--text-principal);
-  margin-top: 4rem;
+  color: var(--text-TitleSub);
+  margin-top: 7rem;
 }
 
 .tracoH2 {
@@ -189,4 +194,111 @@
 .bakcGround {
   background-color: #ffffff;
   margin-top: 3rem;
+}
+
+.traco4,
+.traco5,
+.traco6 {
+  display: none;
+}
+
+.mainDobradicas,
+.mainCortinas,
+.mainTv {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .mainServicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mainMontagem,
+  .mainDesmontagem,
+  .mainManutencao,
+  .mainDobradicas,
+  .mainCortinas,
+  .mainTv {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  .montagem,
+  .desmontagem,
+  .manutencao,
+  .tv,
+  .dobradicas,
+  .cortinas {
+    width: auto;
+    height: 180px;
+  }
+
+  .mainDesmontagem {
+    flex-direction: column-reverse;
+  }
+
+  .sectionDesmontagem {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .sectionManutencao,
+  .sectionMontagem {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .globalParagrafo {
+    text-align: center;
+    font-size: 1rem;
+    max-width: calc(100% - 5rem);
+    text-align: justify;
+    display: none;
+    color: var(--text-secundario);
+  }
+
+  .traco1,
+  .traco3 {
+    width: 70%;
+    border: 1px solid #88aeff;
+  }
+
+  .traco4,
+  .traco5,
+  .traco6 {
+    margin-top: 1.5rem;
+    border: 1px solid #88aeff;
+    width: 70%;
+  }
+
+  .traco2 {
+    border: 1px solid #88aeff;
+    width: 70%;
+  }
+
+  .globalH1 {
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+  }
+
+  .mainFigure1,
+  .mainFigure2 {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .mainFigure {
+    margin-right: 0;
+  }
+
+  .contentGaleria {
+    width: 100%;
+    margin-top: 0;
+  }
 }

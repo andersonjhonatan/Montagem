@@ -2,6 +2,8 @@
   --text-principal: #5f9ea0;
   --color: cadetblue;
   --color2: rgb(255, 255, 255);
+  --text-secundario: rgb(126, 126, 126);
+  --text-TitleSub: rgb(82, 82, 82);
 }
 
 * {
