@@ -4,6 +4,22 @@
   width: 100%;
 }
 
+.mainServicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo {
+  color: var(--text-principal);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  width: 100%;
+  margin-top: 4rem;
+}
+
 .mainServicosHeader {
   display: flex;
   flex-direction: column;
@@ -23,7 +39,6 @@
   max-width: calc(100vw - 14rem);
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
 }
 
 .backButton {
@@ -85,34 +100,37 @@
 .mainDesmontagem,
 .mainManutencao {
   display: flex;
-  justify-content: center;
+  width: 100%;
   align-items: center;
-  align-items: stretch;
+  gap: 1rem;
 }
 
-.sectionMontagem,
-.sectionDesmontagem,
-.sectionManutencao {
-  flex: 1;
-  margin: 4rem;
-  justify-content: center;
-  width: 32%;
+.sectionDesmontagem {
+  justify-content: space-around;
+  margin-left: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionManutencao,
+.sectionMontagem {
+  justify-content: space-around;
+  margin-right: 8rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .mainFigure {
-  flex: 1;
-  justify-content: flex-start;
   display: flex;
+  margin-right: 8rem;
 }
 
-.mainFigure1,
-.mainFigure2 {
+.mainFigure2,
+.mainFigure1 {
   display: flex;
-  flex: 1;
-  align-items: flex-end;
-  justify-content: flex-end;
+  margin-left: 8rem;
 }
 
 .sectionDesmontagem {
@@ -129,27 +147,27 @@
   font-size: 1.2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 30px;
+  margin-top: 1rem;
 }
 
-.contentGaleria {
+/* .contentGaleria {
   background-image: url('../../public/ferramentas3.png');
-}
+} */
 
 .galeriaDeFotos {
   display: flex;
   flex-direction: column;
-  border-radius: 5px 5px 5px 5px;
-  background-color: #96b7ff;
-  height: 10rem;
-  margin-top: 2rem;
   justify-content: center;
-  box-shadow: 0px 2px 0px 2px rgb(1, 213, 255);
 }
 
 .globalH2 {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  font-size: 40px;
+  width: 100%;
+  color: var(--text-principal);
+  margin-top: 4rem;
 }
 
 .tracoH2 {
@@ -170,5 +188,5 @@
 
 .bakcGround {
   background-color: #ffffff;
-  margin-top: calc(1rem + 2 * 5rem);
+  margin-top: 3rem;
 }

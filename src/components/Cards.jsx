@@ -10,7 +10,6 @@ const CardsGaleria = () => {
         <div className="col-md-4">
           <div className={styles.card}>
             <div className={styles.cardbody}>
-              <h1 className={styles.title}>Galeria</h1>
               <figure className={styles.figureservices}>{renderizarFotos()}</figure>
             </div>
           </div>  

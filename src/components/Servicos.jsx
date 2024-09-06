@@ -10,31 +10,8 @@ import picture from '../../public/picture-svgrepo-com.svg'
 
 const Servicos = () => {
   return (
-    <div className={styles.servicos}>
-      <div className={styles.mainServicosHeader}>
-        <section className={styles.section}>
-          <Link href="/">
-            <Image
-              src={back}
-              alt="Back"
-              className={styles.backButton}
-              width={60}
-              height={60}
-            />
-          </Link>
-          <h1 className={styles.nossoServic}>Nossos Serviços</h1>
-          <Link href="#galeria">
-            <Image
-              src={picture}
-              alt="picture"
-              className={styles.picture}
-              width={60}
-              height={60}
-            />
-          </Link>
-        </section>
-      </div>
-
+    <div className={styles.servicos} id="nossoservicos">
+      <h1 className={styles.titulo} >Meus Serviços</h1>
       <div className={styles.bakcGround}>
         <div className={styles.mainServicos}>
           <div className={styles.mainMontagem}>
@@ -43,8 +20,8 @@ const Servicos = () => {
                 src={montagem}
                 alt="montagem"
                 className={styles.montagem}
-                width={780}
-                height={780}
+                width={420}
+                height={420}
               />
             </figure>
             <section className={styles.sectionMontagem}>
@@ -78,8 +55,8 @@ const Servicos = () => {
                 src={desmontagem}
                 alt="desmontagem"
                 className={styles.desmontagem}
-                width={780}
-                height={780}
+                width={420}
+                height={420}
               />
             </figure>
           </div>
@@ -89,8 +66,8 @@ const Servicos = () => {
                 src={manutencao}
                 alt="manutençao"
                 className={styles.manutencao}
-                width={780}
-                height={780}
+                width={420}
+                height={420}
               />
             </figure>
             <section className={styles.sectionManutencao}>
@@ -111,11 +88,9 @@ const Servicos = () => {
         <div className={styles.contentGaleria}>
           <div className={styles.galeriaDeFotos} id="galeria">
             <section>
-              <h2 className={styles.globalH2}>Galeria de Fotos</h2>
-              <div className={styles.tracoH2}></div>
+              <h2 className={styles.globalH2}>Registro de Fotos</h2>
             </section>
           </div>
-          <figure className={styles.render}>{renderizarFotos()}</figure>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const buttonNavs = [
   {'#beneficios': 'Benefícios'},
   {'#contato': 'Contato'},
   {'#depoimentos': 'Depoimentos'},
-  {'/nossoservicos': 'Nossos Serviços'},
+  {'#nossoservicos': 'Serviços'},
   
 ]
 

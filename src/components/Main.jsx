@@ -33,7 +33,7 @@ const Main = () => {
         <section className={styles.bemVindo}>
           <h1 className={styles.tituloMontagem}>Montador de Móveis</h1>
           <p className={styles.paragrafoTitle}>
-            <strong className="text-6xl">Bem-vindo ao meu site,</strong> Cada montagem que realizo vai além de simplesmente montar móveis; é sobre dar vida à sua visão e criar ambientes onde suas histórias serão vividas. Com paixão e cuidado, transformo peças em cenários perfeitos para seus momentos especiais. Deixe-me transformar seus sonhos em realidade!
+            <strong className="text-6xl">Bem-vindo ao meu site,</strong> cada montagem que realizo vai além de simplesmente montar móveis; é sobre dar vida à sua visão e criar ambientes onde suas histórias serão vividas. Com paixão e cuidado, transformo peças em cenários perfeitos para seus momentos especiais. Deixe-me transformar seus sonhos em realidade!
           </p>
           <Link href="https://contate.me/seumontador" target="_blank" className={styles.button}>AGENDAR AGORA</Link>
         </section>
