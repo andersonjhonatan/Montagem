@@ -15,7 +15,7 @@
   color: var(--text-TitleSub);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   width: 100%;
   margin-top: 4rem;
 }
@@ -155,11 +155,6 @@
   color: var(--text-secundario);
 }
 
-.contentGaleria {
-  background-image: url('../../public/ferramentas3.png');
-  margin-top: 2rem;
-}
-
 .galeriaDeFotos {
   display: flex;
   flex-direction: column;
@@ -172,7 +167,7 @@
   font-size: 40px;
   width: 100%;
   color: var(--text-TitleSub);
-  margin-top: 7rem;
+  margin-top: 1rem;
 }
 
 .tracoH2 {
@@ -193,7 +188,7 @@
 
 .bakcGround {
   background-color: #ffffff;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .traco4,
@@ -219,6 +214,7 @@
     background-size: cover;
     align-items: stretch; /* Faz com que os itens preencham a altura */
     justify-items: stretch;
+    padding: 2rem 0;
   }
   .mainMontagem,
   .mainDesmontagem,
