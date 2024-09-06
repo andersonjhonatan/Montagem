@@ -10,28 +10,30 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-          <section className={styles.logoFooter}>
-            <Image
-          src="/logo-baixo.png"
-          alt="Logo"
-          width={200}
-          height={200}
-          className={styles.logo}
-        />
-          </section>
+        <section className={styles.logoFooter}>
+          <Image
+            src="/logo-baixo.png"
+            alt="Logo"
+            width={200}
+            height={200}
+            className={styles.logo}
+          />
+        </section>
         <div className={styles.menuFooter}>
           <ul>
             <li>
               <Link href="#beneficios">Benefícios</Link>
             </li>
-            <li >
-              <Link className={styles.linkServicos} href="/nossoservicos">Serviços</Link>
+            <li>
+              <Link className={styles.linkServicos} href="#nossoservicos">
+                Serviços
+              </Link>
             </li>
             <li>
-              <Link href="#montagem">Montagem</Link>
+              <Link href="#galeria">Fotos</Link>
             </li>
-           
-           {/*  <li>
+
+            {/*  <li>
               <Link href="#depoimentos">Depoimentos</Link>
             </li> */}
           </ul>
@@ -89,10 +91,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-        <div className={styles.content}>
-          <p>&copy; 2023 - Seu Montador - Todos os direitos reservados</p>
-          <p>Desenvolvido por: Anderson Jhonatan</p>
-        </div>
+      <div className={styles.content}>
+        <p>&copy; 2023 - Seu Montador - Todos os direitos reservados</p>
+        <p>Desenvolvido por: Anderson Jhonatan</p>
+      </div>
     </footer>
   )
 }

@@ -94,7 +94,6 @@ const Servicos = () => {
                 height={420}
               />
             </figure>
-            <div className={styles.traco4}></div>
           </div>
           {/* TV */}
           <div className={styles.mainTv}>
@@ -107,7 +106,6 @@ const Servicos = () => {
                 height={420}
               />
             </figure>
-            <div className={styles.traco5}></div>
           </div>
           {/* DOBRADICAS */}
           <div className={styles.mainDobradicas}>
@@ -120,7 +118,6 @@ const Servicos = () => {
                 height={420}
               />
             </figure>
-            <div className={styles.traco6}></div>
           </div>
         </div>
         <div className={styles.contentGaleria}>

@@ -267,9 +267,7 @@
   .titleRedesSocial {
     font-size: 20px;
   }
-  .linkServicos {
-    display: none;
-  }
+
   .menuFooter ul {
     display: flex;
     list-style: none;
