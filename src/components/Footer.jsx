@@ -43,7 +43,7 @@ const Footer = () => {
               <h2 className={styles.titleContact}>Contato</h2>
               <div className={styles.contentPhone}>
                 <FiPhoneCall size={20} className={styles.iconPhone} />
-                <p>(83) 9 9359-5471</p>
+                <p>(83) 9 8891-3749</p>
               </div>
               <div className={styles.contentEmail}>
                 <MdOutlineEmail size={20} className={styles.iconEmail} />
