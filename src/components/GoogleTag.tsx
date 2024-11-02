@@ -6,7 +6,8 @@ const GoogleTagManager = () => {
     // Cria o script tag de forma dinâmica
     const script = document.createElement('script');
     script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-2T2K6ZYDT1";
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-404119033
+";
     document.head.appendChild(script);
 
     // Adiciona o restante do código de configuração
@@ -15,7 +16,8 @@ const GoogleTagManager = () => {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-2T2K6ZYDT1');
+      gtag('config', 'AW-404119033
+');
     `;
     document.head.appendChild(inlineScript);
 
