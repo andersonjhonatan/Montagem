@@ -1,47 +1,25 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { renderizarLinks } from '../functions/Global'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Header.module.css'
-import { BsAlarm } from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'
-const Header = (props) => {
-  const [showBorder, setShowBorder] = useState(false)
+import { FiMenu, FiX } from 'react-icons/fi'
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < 80) {
-        setShowBorder(false)
-      } else {
-        setShowBorder(true)
-      }
-    }
+const links = [['#montagem','Início'],['#beneficios','Benefícios'],['#nossoservicos','Serviços'],['#galeria','Trabalhos']]
 
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
-  return (
-    <div className={styles.header}>
-      <nav className={`nav ${showBorder ? styles.nav : styles.nav1}`}>
-      <Image
-          src="/logo-s.png"
-          alt="Logo"
-          width={100}
-          height={100}
-          className={styles.logo}
-          priority
-        />
-        <ul className={styles.linksButton}>{renderizarLinks()}</ul>
-        <Link href="#horario">
-          <BsAlarm size={25} className={styles.iconAlarm} />
-        </Link>
-      </nav>
-    </div>
-  )
+const Header = () => {
+  const [scrolled,setScrolled] = useState(false)
+  const [open,setOpen] = useState(false)
+  useEffect(() => { const onScroll=()=>setScrolled(window.scrollY>30); onScroll(); window.addEventListener('scroll',onScroll,{passive:true}); return()=>window.removeEventListener('scroll',onScroll) },[])
+  return <header className={`${styles.header} ${scrolled?styles.scrolled:''}`}>
+    <nav className={styles.nav} aria-label="Navegação principal">
+      <Link href="#montagem" className={styles.brand} aria-label="Seu Montador - início"><Image src="/logo-s.png" alt="Seu Montador" width={82} height={82} className={styles.logo} priority /></Link>
+      <div className={`${styles.menu} ${open?styles.menuOpen:''}`}>
+        {links.map(([href,label])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}
+        <Link href="https://contate.me/montadorseu" target="_blank" className={styles.cta} onClick={()=>setOpen(false)}>Pedir orçamento</Link>
+      </div>
+      <button className={styles.toggle} onClick={()=>setOpen(!open)} aria-label={open?'Fechar menu':'Abrir menu'} aria-expanded={open}>{open?<FiX size={25}/>:<FiMenu size={25}/>}</button>
+    </nav>
+  </header>
 }
-
 export default Header
